@@ -4,6 +4,6 @@
     android:layout_height="match_parent"
     tools:context="com.geogehigbie.slopesradio.fragment.StationsFragment">
 
-
+    <include layout="@layout/content_stations_recycler"/>
 
 </FrameLayout>
