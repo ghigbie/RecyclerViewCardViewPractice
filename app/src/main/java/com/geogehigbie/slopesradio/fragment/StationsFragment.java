@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.geogehigbie.slopesradio.R;
+import com.geogehigbie.slopesradio.adapters.StationsAdapter;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -70,6 +71,9 @@ public class StationsFragment extends Fragment {
 
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view1);
         recyclerView.setHasFixedSize(true);
+
+        StationsAdapter adapter = new StationsAdapter();
+        recyclerView.setAdapter(adapter);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
