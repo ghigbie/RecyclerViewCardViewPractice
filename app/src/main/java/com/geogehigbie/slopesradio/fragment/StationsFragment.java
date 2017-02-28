@@ -67,7 +67,7 @@ public class StationsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_stations, container, false);
 
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view1)
+        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view1);
 
         // Inflate the layout for this fragment
         return view;
