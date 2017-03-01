@@ -46,7 +46,7 @@ public class StationsFragment extends Fragment {
      * @return A new instance of fragment StationsFragment.
      */
 
-    public static StationsFragment newInstance(int stationType, String param1, String param2) {
+    public static StationsFragment newInstance(int stationType) {
         StationsFragment fragment = new StationsFragment();
         Bundle args = new Bundle();
         args.putInt(ARG_STATION_TYPE, stationType);
@@ -71,6 +71,17 @@ public class StationsFragment extends Fragment {
         recyclerView.setHasFixedSize(true);
 
         StationsAdapter adapter = new StationsAdapter();
+
+        if(stationType == STATION_TYPE_FEATURED){
+
+        }else if (stationType == STATION_TYPE_RECENT){
+
+        }else{
+
+        }
+
+
+
         recyclerView.setAdapter(adapter);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
