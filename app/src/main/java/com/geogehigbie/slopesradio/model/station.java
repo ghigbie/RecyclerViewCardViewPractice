@@ -7,19 +7,20 @@ package com.geogehigbie.slopesradio.model;
 public class station {
 
     final String DRAWABLE = "drawable";
+
     private String stationTitle;
     private String imgUri;
 
-    public station(String imgUri, String stationTitle) {
-        this.imgUri = imgUri;
+    public station(String stationTitle, String imgUri) {
         this.stationTitle = stationTitle;
-    }
-
-    public String getImgUri() {
-        return imgUri;
+        this.imgUri = imgUri;
     }
 
     public String getStationTitle() {
         return stationTitle;
+    }
+
+    public String getImgUri() {
+        return imgUri;
     }
 }
