@@ -4,6 +4,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
 
 import com.geogehigbie.slopesradio.holders.StationViewHolder;
+import com.geogehigbie.slopesradio.model.Station;
+
+import java.util.ArrayList;
 
 /**
  * Created by georgehigbie on 2/28/17.
@@ -11,7 +14,12 @@ import com.geogehigbie.slopesradio.holders.StationViewHolder;
 
 public class StationsAdapter extends RecyclerView.Adapter<StationViewHolder>{
 
-    private ArrayList<>
+
+    private ArrayList<Station> stations;
+
+    public StationsAdapter(ArrayList<Station> stations) {
+        this.stations = stations;
+    }
 
 
     @Override
