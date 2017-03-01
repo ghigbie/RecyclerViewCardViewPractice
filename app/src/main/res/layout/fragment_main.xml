@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/littleTextColor"
             android:textSize="@dimen/little_text_size"
-            android:paddingLeft="@dimen/big_text_size"
+            android:paddingLeft="@dimen/text_padding"
             android:text="@string/little_text"/>
 
         <FrameLayout

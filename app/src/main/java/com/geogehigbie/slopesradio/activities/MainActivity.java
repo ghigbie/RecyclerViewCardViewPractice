@@ -21,5 +21,8 @@ public class MainActivity extends AppCompatActivity {
             mainFragment = MainFragment.newInstance("blah", "kah");
             fragmentManager.beginTransaction().add(R.id.container_main, mainFragment).commit();
         }
+
     }
+
+
 }
