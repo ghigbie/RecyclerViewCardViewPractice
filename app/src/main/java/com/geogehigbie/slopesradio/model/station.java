@@ -4,14 +4,14 @@ package com.geogehigbie.slopesradio.model;
  * Created by georgehigbie on 2/28/17.
  */
 
-public class station {
+public class Station {
 
     final String DRAWABLE = "drawable";
 
     private String stationTitle;
     private String imgUri;
 
-    public station(String stationTitle, String imgUri) {
+    public Station(String stationTitle, String imgUri) {
         this.stationTitle = stationTitle;
         this.imgUri = imgUri;
     }

@@ -11,6 +11,9 @@ import com.geogehigbie.slopesradio.holders.StationViewHolder;
 
 public class StationsAdapter extends RecyclerView.Adapter<StationViewHolder>{
 
+    private ArrayList<>
+
+
     @Override
     public int getItemCount() {
         return 0;
