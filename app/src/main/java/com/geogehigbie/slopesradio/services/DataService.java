@@ -28,17 +28,16 @@ public class DataService {
         return list;
     }
 
-//    public ArrayList <Station> getRecentStations(){
-//        ArrayList<Station> list = new ArrayList<>();
-//        list.add();
-//
-//        return list;
-//    }
-//
-//    public ArrayList <Station> getPartyStations(){
-//        ArrayList<Station> list = new ArrayList();
-//        list.add();
-//
-//        return list;
-//    }
+    public ArrayList <Station> getRecentStations(){
+        ArrayList<Station> list = new ArrayList<>();
+
+        return list;
+    }
+
+    public ArrayList <Station> getPartyStations(){
+        ArrayList<Station> list = new ArrayList();
+        list.add();
+
+        return list;
+    }
 }

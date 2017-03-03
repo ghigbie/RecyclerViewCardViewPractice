@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 
 import com.geogehigbie.slopesradio.R;
 import com.geogehigbie.slopesradio.adapters.StationsAdapter;
+import com.geogehigbie.slopesradio.services.DataService;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -73,11 +74,11 @@ public class StationsFragment extends Fragment {
         StationsAdapter adapter = new StationsAdapter();
 
         if(stationType == STATION_TYPE_FEATURED){
-
+            adapter = new StationsAdapter(DataService.getInstance().getFeaturedStations());
         }else if (stationType == STATION_TYPE_RECENT){
-
+            adapter = new StationsAdapter(DataService.getInstance().getRecentStations());
         }else{
-
+            adapter = new StationsAdapter(DataService.getInstance().getPartyStations());
         }
 
 
